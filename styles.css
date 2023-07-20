@@ -11,7 +11,7 @@ body {
 
 .card {
     width: 90%;
-    max-width: 470px;
+    max-width: 480px;
     color: #fff;
     margin: 70px auto 10px;
     border-radius: 20px;
@@ -38,6 +38,8 @@ body {
     flex: 1;
     margin-right: 16px;
     font-size: 18px;
+    margin-bottom: 10px;
+    max-width: 200px;
 }
 
 .search button{
@@ -48,6 +50,8 @@ body {
     width: 60px;
     height: 60px;
     cursor: pointer;
+    flex: 0 0 20%;
+    max-width: 80px;
 }
 
 .search button img{
@@ -113,3 +117,24 @@ body {
 .feelscontrast, .visi, .min, .max{
     filter: invert(100%);
 }
+
+@media screen and (max-width: 480px) {
+    .search input {
+        flex: 0 0 70%;
+        min-width: initial;
+    }
+    .search button {
+        flex: 0 0 22%;
+    }
+    .details {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .col {
+        margin-bottom: 30px;
+    }
+    .city{
+        margin-bottom: 30px;
+    }
+}
+
